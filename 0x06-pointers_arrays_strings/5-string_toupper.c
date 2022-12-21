@@ -1,4 +1,4 @@
-@s: first para#include "main.h"
+#include "main.h"
 /**
  *string_toupper - Changes lowercase to uppercase
  *@s: Parameter
