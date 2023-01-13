@@ -18,4 +18,3 @@ int check_for_digits(char **av);
 
 void init(char *str, int l);
 
-int main(int argc, char *argv[]);
