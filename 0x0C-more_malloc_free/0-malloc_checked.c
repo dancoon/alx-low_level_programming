@@ -1,19 +1,16 @@
 #include "main.h"
-#include <stdlib.h>
+#include<stdlib.h>
 /**
- * malloc_checked - Allocates a block of memory using malloc
- * @b: Parameter
- * Return: 98 or pointer to memory
+ * malloc_checked - allocates memory using malloc
+ * @b: bytes allocate
+ * Return: pointer
  */
 void *malloc_checked(unsigned int b)
 {
-	void *a;
+	void *ptr;
 
-	a = malloc(b);
-
-	if (a != NULL)
-	{
-		return (a);
-	}
-	exit(98);
+	ptr = malloc(b);
+	if (ptr == NULL)
+		exit(98);
+	return (ptr);
 }
