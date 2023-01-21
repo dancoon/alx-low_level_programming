@@ -1,0 +1,12 @@
+#include "variadic_functions"
+/**
+ * print_char - print char
+ * @args: va_list
+ * Return: void
+ */
+void print_char(va_list args)
+{
+	printf("%c", va_arg(args, char);
+}
+
+
