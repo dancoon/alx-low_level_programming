@@ -1,0 +1,28 @@
+#include "main.h"
+/**
+ * binary_to_uint - converts binary number to unsigned int
+ * @b: string
+ * Return: binary
+ */
+unsigned int binary_to_uint(const char *b)
+{
+	int rem, dec, base;
+	int num = atoi(b);
+
+	if (!b)
+		return (0);
+	if (num == 0)
+		return (0);
+
+	base = 1;
+	dec = 0;
+	while (num > 0)
+	{
+		rem = num % 10;
+		dec += rem * base;
+		base *= 2;
+		num /= 10;
+	}
+	return (dec);
+}
+
