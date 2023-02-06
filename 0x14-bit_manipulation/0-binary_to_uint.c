@@ -72,19 +72,6 @@ unsigned int binary_to_uint(const char *b)
 		printf("Result is %u.\n", result);
 		#endif
 	}
-<<<<<<< HEAD
-
-	return (result);
-
-}
-=======
-	for (i = 0; b[i] != '\0'; i++)
-	{
-		num <<= 1;
-		if (b[i] == '1')
-			num += 1;
-	}
 	return (num);
 }
 
->>>>>>> 4db68cc962e93fb062c65d6bcfe4d1e72533a40d
