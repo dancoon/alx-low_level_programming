@@ -32,12 +32,6 @@ unsigned int binary_to_uint(const char *b)
 			ui += base_two;
 		}
 	}
-<<<<<<< HEAD
 
 	return (ui);
 }
-=======
-	return (num);
-}
-
->>>>>>> d23a2c0a8e9cb9b62659008bd6685d4d028fc249
