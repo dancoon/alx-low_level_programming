@@ -8,20 +8,20 @@
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
+	dlistint_t *current;
 	unsigned int j;
 
 	if (head == NULL)
 		return (NULL);
-	if (index == 0)
-		return (head);
-
-	while (j <= index)
+	current = head;
+	j = 0;
+	while (current)
 	{
-		if (head->next == NULL)
-			return (NULL);
-		head = head->next;
+		if (j == index)
+			return (current);
+		current = current->next;
 		j++;
 	}
-	return (head);
+	return (NULL);
 }
 
